@@ -30,6 +30,4 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.DROPLET_PASSPHRASE }}
           script: |
-            sudo docker pull squashataka/bottlenose-frontend
-            sudo docker pull squashataka/bottlenose-backend
             sudo docker-compose down && sudo docker-compose up -d
